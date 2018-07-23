@@ -13,6 +13,10 @@ class Circle:
         c = 2 * math.pi * self.r
         return c
 
+    def getArea(self):
+        a = math.pi * self.r * self.r
+        return a
+
 if __name__ == '__main__':
 
     
@@ -20,3 +24,7 @@ if __name__ == '__main__':
     print("asserting radius ", 8)
     c.setRadius(8)
     print("circumference is ", c.getCirc())
+    print("area is", c.getArea())
+
+
+
