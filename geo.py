@@ -37,7 +37,7 @@ class RightAngleTriangle:
         lsa = math.acos(lsacos) * 180 / math.pi
         return lsa
 
-    def getRightAngle(self):
+    def getRightestAngle(self):
 
         rsacos = (self.getLongSide() * self.getLongSide() + self.r * self.r - self.l * self.l) / (2 * self.getLongSide() * self.l)
         rsa = math.acos(rsacos) * 180 / math.pi
@@ -58,5 +58,8 @@ if __name__ == '__main__':
     r.setSides(5, 5)
     s = r.getLongSide()
     print("longest side is ", r.getLongSide())
-    print(r.getRightAngle(), "degrees")
+    print("")
+    print(r.getRightestAngle(), "degrees")
+
+    assert c.getArea() > 201, "the two sides must be less long than the longest side and greater than 0 length"
 
